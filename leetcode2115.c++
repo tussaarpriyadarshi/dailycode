@@ -28,8 +28,10 @@ class Solution {
                     que.push(i);
                 }
             }
-            //since queue contains the idx,we need the string
+            //since queue contains the idx,we need the string that is in our case it is bread
             //grab it ,push it in result vec and look for the neighbour of bread in adjacency list
+            //decrease the indegree .if it is zero.push it in queue.
+            //at last return the result.
             vector<string>result;
             while(!que.empty()){
                 int i=que.front();
